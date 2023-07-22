@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "OpenCVSamples"
+include ':app'
+include ':opencv'
+project(':opencv').projectDir = new File("/Users/dinesh/Documents/opencv/OpenCV-android-sdk/sdk")
